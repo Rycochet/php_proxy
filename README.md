@@ -25,6 +25,6 @@ It will take the first domain it finds, so there is no need to forward multiple 
 
 Create the config file, copy the three files to your web server, enjoy...
 
-- [x] .htaccess
-- [x] index.php
-- [x] config.inc.php
+* .htaccess
+* index.php
+* config.inc.php
