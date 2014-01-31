@@ -13,6 +13,7 @@ This will proxy all domains (and subdomains with the correct wildcard hosts) fro
 Create a "config.inc.php" file, and populate it with your own domains and their targets -
 
 ```php
+<?php
 $domains = array(
 	"mydomain.com" => "thepiratebay.se",
 	"myotherdomain.com" => "yts.re" // Also catches static.yts.re
