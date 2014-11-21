@@ -39,7 +39,7 @@ foreach ($_SERVER as $key => $value) {
 	if (substr($key, 0, 5) == "HTTP_") {
 		$key = str_replace(" ", "-", ucwords(strtolower(str_replace("_", " ", substr($key, 5)))));
 		if (array_search($key, $disallow) === false) {
-			$httpheader[] = $key . ": " . str_replace($host, split($proxy, "/")[0], $value);
+			$httpheader[] = $key . ": " . str_replace(array($host), split("/", $proxy, 2), $value);
 		}
 	}
 }
